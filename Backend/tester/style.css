@@ -1,0 +1,38 @@
+body {
+    /* [CodeGuardian Fix] Combined duplicate body declarations into a single block. */
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: white;
+}
+
+.header {
+    display: flex;
+}
+
+/* [CodeGuardian Fix] Simplified selector to be more robust and less reliant on deep nesting. */
+.header .nav a {
+    color: blue;
+}
+
+.box {
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+/* [CodeGuardian Fix] Removed unused class to clean up the stylesheet. */
+/* .never-used-class {
+    color: red;
+} */
+
+/* [CodeGuardian Fix] Removed low-contrast class due to accessibility concerns and no current usage in HTML. */
+/* .low-contrast {
+    background: #eee;
+    color: #ddd;
+} */
+
+/* [CodeGuardian Fix] Added CSS class for previously inline styles from index.html for better maintainability. */
+.red-text-20px {
+    color: red;
+    font-size: 20px;
+}
